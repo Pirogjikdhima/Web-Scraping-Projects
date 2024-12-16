@@ -73,6 +73,7 @@ def save(response: requests.Response, filename: str) -> str:
                         "Cmimi i vjeter": old_price
                     })
         
+        os.makedirs("Globe", exist_ok=True)
         df = pd.DataFrame(product_data)
         file_path = f"Globe/{filename}"
 
